@@ -1,0 +1,206 @@
+/* ROOT */
+:root {
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* CUSTOM FONT LOADING using FONT-FACE */
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/outfit/outfit-v11-latin-regular.woff2")
+    format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/outfit/outfit-v11-latin-600.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/outfit/outfit-v11-latin-700.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url("/assets/fonts/young-serif/young-serif-v2-latin-regular.woff2")
+    format("woff2");
+  font-weight: 400;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= BASIC REQUIRED STARTING BOILERPLATE =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--stone-100);
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--stone-600);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2 {
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Young Serif", serif;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= CUSTOM STYLING STARTS =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* H1 & H2 */
+h1 {
+  color: var(--stone-900);
+  font-size: 2.25rem;
+  margin-bottom: 25px;
+}
+h2 {
+  color: var(--brown-800);
+  font-size: 1.75rem;
+  margin-bottom: 22px;
+}
+
+/* MAIN */
+main {
+  background: var(--white);
+  margin-inline: auto;
+}
+
+/* WRAPPER */
+.wrapper {
+  padding: 20px 30px;
+  display: grid;
+  gap: 18px;
+}
+
+/* SECTION */
+section {
+  padding-block: 20px;
+  border-bottom: 1px solid hsl(0 0 5% / 0.2);
+}
+
+/* HERO */
+.hero {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+/* PREPARATION */
+.preparation {
+  background: var(--rose-50);
+  border-radius: 15px;
+  padding: 20px 25px;
+}
+.preparation p {
+  color: var(--rose-800);
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/* NUTRITIONS */
+.nutritions {
+  border-bottom: none;
+}
+
+/* UL, OL & LI */
+ul,
+ol {
+  padding-left: 20px;
+}
+li {
+  padding-left: 20px;
+  margin-bottom: 7px;
+}
+li::marker {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+ul li::marker {
+  font-size: 12px;
+}
+.preparation ul li::marker {
+  color: var(--rose-800);
+}
+
+/* TABLE, TD & TH */
+table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+td,
+th {
+  border-bottom: 1px solid hsl(0 0 5% / 0.2);
+  padding-block: 12px;
+}
+td {
+  padding-left: 30px;
+}
+th {
+  text-align: left;
+  color: var(--brown-800);
+}
+tr:last-child * {
+  border-bottom: none;
+}
+
+/* MEDIA QUERY for DESKTOP and ABOVE */
+@media (min-width: 70em) {
+  main {
+    max-width: 42.5em;
+    margin-block: 100px;
+    border-radius: 20px;
+  }
+
+  /* RECIPE IMG CLASS FOR RECIPE IMAGE */
+  .recipe-img {
+    padding: 40px;
+  }
+  .recipe-img img {
+    border-radius: 15px;
+  }
+
+  .wrapper {
+    padding-inline: 40px;
+    padding-block: 0 40px;
+  }
+
+  .hero {
+    padding-block: 0 10px;
+  }
+
+  .attribution {
+    padding-block: 0 50px;
+  }
+}
+
+/* ATTRIBUTION CLASSES */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-block: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+}
