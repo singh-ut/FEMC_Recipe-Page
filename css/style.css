@@ -13,23 +13,23 @@
 /* CUSTOM FONT LOADING using FONT-FACE */
 @font-face {
   font-family: "Outfit";
-  src: url("/assets/fonts/outfit/outfit-v11-latin-regular.woff2")
+  src: url("../assets/fonts/outfit/outfit-v11-latin-regular.woff2")
     format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: "Outfit";
-  src: url("/assets/fonts/outfit/outfit-v11-latin-600.woff2") format("woff2");
+  src: url("../assets/fonts/outfit/outfit-v11-latin-600.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
   font-family: "Outfit";
-  src: url("/assets/fonts/outfit/outfit-v11-latin-700.woff2") format("woff2");
+  src: url("../assets/fonts/outfit/outfit-v11-latin-700.woff2") format("woff2");
   font-weight: 700;
 }
 @font-face {
   font-family: "Young Serif";
-  src: url("/assets/fonts/young-serif/young-serif-v2-latin-regular.woff2")
+  src: url("../assets/fonts/young-serif/young-serif-v2-latin-regular.woff2")
     format("woff2");
   font-weight: 400;
 }
