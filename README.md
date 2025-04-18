@@ -24,8 +24,8 @@ _Mobile Screenshot_
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-recipe-page-using-media-queries-DiAiR3bof9)
+- Live Site URL: [Github](https://singh-ut.github.io/FEMC_Recipe-Page/)
 
 ## My process
 
